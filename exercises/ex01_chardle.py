@@ -1,5 +1,5 @@
-"""EX01 - Chardle - A cute step toward Wordle"""
-__author__ = 730403031
+"""EX01 - Chardle - A cute step toward Wordle."""
+__author__ = "730403031"
 
 # Prompting for Inputs / Exiting Early for Invalid Inputs
 count_char: int = 0
