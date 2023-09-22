@@ -2,7 +2,7 @@
 __author__ = "730403031"
 
 # Establishing Secret & Prompting a Guess
-secret_word: str = "python"
+secret_word: str = "rohan"
 i: int = len(secret_word)
 guess: str = input(f"What is your {i} letter guess? ")
 
