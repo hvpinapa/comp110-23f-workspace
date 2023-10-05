@@ -22,9 +22,9 @@ while guess != secret and (num_of_tries < max_tries - 1):
         print("Too high!")
 # Counting number of tries left
     if tries_left > 1:
-        print(f"You have {tries_left} tries left!")
+        print(f"~~~ You have {tries_left} tries left! ~~~")
     elif tries_left == 1:
-        print(f"You have {tries_left} try left!")
+        print(f"~~~ You have {tries_left} try left ~~~")
  # Ask for different guess       
     guess = int(input("Guess again: "))
     num_of_tries += 1
@@ -34,4 +34,5 @@ while guess != secret and (num_of_tries < max_tries - 1):
 if guess == secret:
     print("You guessed correctly!")
 else:
-    print("You Lose! :(")
+    print("_________________________________")
+    print("That was incorrect! You Lose! :(")
