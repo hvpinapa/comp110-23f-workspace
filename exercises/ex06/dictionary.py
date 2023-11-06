@@ -72,7 +72,9 @@ def update_attendance(attendance_log: dict[str, list[str]], day: str, student: s
     """Returns a mutated dictionary based on students that are present on different days."""
     # Checks if day is already initialized, appends student if True
     if day in attendance_log:
-        attendance_log[day].append(student)
+        # Checks if student exists in the day already, appends name if False
+        if student not in attendance_log[day]:
+            attendance_log[day].append(student)
     # New day, as the key, initialized if not True, students can be added
     else:
         attendance_log[day] = [student]
